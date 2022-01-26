@@ -15,7 +15,7 @@ class Stadium(models.Model):
     updated_at = models.DateTimeField(auto_now=True, db_index=True)
 
     def __str__(self):
-        return f"Name : {self.name} | City :{self.city}  | Founded : {self.founded_in} | Capacity : {self.capacity} "
+        return f"Name : {self.name} | City :{self.city} | Capacity : {self.capacity} "
 
     class Meta:
         db_table = 'stadiums'
