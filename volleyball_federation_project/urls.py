@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
+from rest_framework.schemas import get_schema_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')) ,
+    path('openapi', get_schema_view( 
+        title="VolleyBall Federation API",
+        description="A sample API for managing games with DRF",
+        version="1.0.0"
+    ), name='openapi-schema'),
 ]

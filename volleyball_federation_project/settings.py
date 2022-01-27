@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stadium.apps.StadiumConfig',
-    'matches.apps.MatchesConfig',
+    'matches.apps.MatchesConfig',   
     'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
