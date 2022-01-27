@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stadium.apps.StadiumConfig',
     'matches.apps.MatchesConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
