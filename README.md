@@ -13,11 +13,23 @@ Our system should have REST APIs for the following tasks:
 - Defining the place of seats for each match
 - Buying seats of a match (There is no need for using a payment gateway)
 
-# Implementation details
+# solution
+Added Stadium , Matches and ticket models to manage and implement management system .
+Used DRF django rest framework to implement APIs , also use different packages for documents like swagger and redoc to support openapi.
 
-We don't need a GUI for this system. You can use the Django admin.
-Try to write your code as **reusable** and **readable** as possible. Also, don't forget to **document your code** and clear the reasons for all your decisions in the code.
-Using API documentation tools is a plus.
-Don't forget that many people trying to buy tickets for a match. So try to implement your code in a way that could handle the load. If your solution is not sample enough for implementing fast, you can just describe it in your documents.
+# Implemented
+1. Stadium mangement API
+2. matches management API and seats
+3. Ticket management API 
+4. User Auth
+5. User Register
+6. Forgot Password API
 
-Please fork this repository and add your code to that. Don't forget that your commits are so important. So be sure that you're committing your code often with a proper commit message.
+# Database 
+sqlie used for db , you can change it from settings !
+
+# installation
+1. create your virtual env
+2. pip install -r requirements.txt
+3. run migrat
+4. run server 
