@@ -31,5 +31,5 @@ sqlie used for db , you can change it from settings !
 # installation
 1. create your virtual env
 2. pip install -r requirements.txt
-3. run migrat
+3. run migrate
 4. run server 
