@@ -20,7 +20,7 @@ class Match(models.Model):
     updated_at = models.DateTimeField(auto_now=True, null=True)
 
     def __str__(self):
-        return f"{self.team1} | VS | {self.team2}"
+        return f"{self.stadium} : {self.team1} | VS | {self.team2} - {self.event_date}"
 
     @classmethod
     def is_reserved(self, reserved_dt):
