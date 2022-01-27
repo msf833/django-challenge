@@ -14,6 +14,7 @@ class Match(models.Model):
     place_of_seats_to_row = models.CharField(max_length=10, null=True)
     place_of_seats_from_col = models.CharField(max_length=10, null=True)
     place_of_seats_to_col = models.CharField(max_length=10, null=True)
+    seat_capacity = models.PositiveIntegerField(default=100)
     
     created_at = models.DateTimeField(default=timezone.now, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
